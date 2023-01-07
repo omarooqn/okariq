@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  الإستغفار </title>
+  <link rel="shortcut icon" type="image/png" href="muhammad.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+<div class="setting position-fixed pt-5">
+    <span class="gear-span position-absolute d-flex justify-content-center align-items-center"><i class="fa-solid fa-gear fa-spin" role="button"></i></span>
+
+    <div class="colors mt-3 pt-5 setting-content d-flex justify-content-center align-items-center flex-column">
+      
+      <ul class="style-list d-flex justify-content-center align-items-center">
+        <li class="active" role="button" data-color="red">
+      </ul>
+    </div>
+    <hr class="w-50">
+       <div class="mode setting-content d-flex justify-content-center align-items-center flex-column">
+      <h3>السمة</h3>
+      <span class="mode-theme position-relative d-flex align-items-center">
+        <span class="round position-absolute d-block" role="button"></span>
+      </span>
+      <h3>الاهتزاز</h3>
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+    <label class="onoffswitch-label" for="myonoffswitch"onclick="vibr()" ></label>
+</div>
+    <hr class="mt-4 w-50">
+  </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+   <div class="body">
+      <div class="container">
+        <div class="all">
+          <div class="header">الإستغفار</div>
+
+          
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+             <p style="font-size: 18px;color:red">
+تيقن أن أخطر المخاطر عليك في دنياك وآخرتك هي ذنوبك...!
+
+واعلم أنك ستمر الآن بكلمات استغفار، إنما هي بحور المغفرة الزاخرة...
+
+فإياك أن ترددها بلسانك ويبقى من دَرَنِكَ في صحيفتك شيءٌ!
+
+يا لها من كلماتٍ لو وافقت قلوباً حيةً؛ عرفت عظمة من عصت وخالفت،
+
+فقالت باستحياءٍ وإشفاقٍ: ﴿ رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ﴾ [الأعراف: ٢۳].
+
+فحذار أن تردد استغفارك وقلبك ذاهلٌ عن عاقبة أمرك إن لم يغفر اللَّه لك...!
+
+غافلٌ عن حقيقة المعاني الكبيرة للاستغفار القادم...!
+
+غافلٌ عن عِظَمِ من عصيت...!
+
+فليهجم لسانك وقلبك معاً على هذا الاستغفار، فقد آن أوان المغفرة، فليس على اللَّه كثيرٌ أن يغفر لك ما تقدم من ذنبك وما تأخر بانتهاء هذا الورد...
+
+أليس اللَّه هو الغفور الرحيم؟
+              </p>
+      
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+  
+            </div>
+          </section>
+          
+           <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">          
+             <p>
+             	رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ
+</p>
+             
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+              	رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+ <p>
+رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ (193)رَبَّنَا وَآتِنَا مَا وَعَدْتَنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+         <p>
+رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَءُوفٌ رَحِيمٌ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+يَقُولُونَ رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+ <p>
+رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+<p>
+	وَمَا كَانَ قَوْلَهُمْ إِلَّا أَنْ قَالُوا رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+<p>
+رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+قَالَ رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي فَغَفَرَ لَهُ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+<p>
+وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ وَأَنْتَ خَيْرُ الرَّاحِمِينَ
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+         <p>
+	وجهت وجهي للذي فطر السموات و الأرض حنيفاً و ما أنا من المشركين، إن صلاتي، و نسكي، و محياي، و مماتي، لله رب العالمين، لا شريك له، و بذلك أمرت و أنا من المسلمين، اللهم أنت الملك لا إله إلا أنت.أنت ربي و أنا عبدك، ظلمت نفسي و اعترفت بذنبي، فاغفر لي ذنوبي جميعاً،إنه لا يغفر الذنب إلا أنت، و أهدني لأحسن الأخلاق، لا يهدي لأحسنها إلا أنت، و اصرف عني سيئها إلا أنت،لبيك و سعديك، و الخير كله في يديك، و الشر ليس إليك، أنا بك و إليك، تباركت و تعاليت، أستغفرك و أتوب إليك 
+
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+             <p>
+اللهم إني أسألك يا الله، الأحد الصمد، الذي لم يلد و لم يولد،و لم يكن له كفواً أحد، أن تغفر لي ذنوبي، إنك أنت الغفور الرحيم
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم إغفر لي خطيئتي و جهلي، و إسرافي في أمري، و ما أنت أعلم به مني، اللهم اغفر لي جِدِّي و هزلي، و خطئي و عمدي، و كل ذلك عندي، اللهم اغفر لي ما قدمت و ما أخرت، و ما أسررت و ما أعلنت، و ما أنت أعلم به مني، أنت المقدم و أنت المؤخر، و أنت على كل شيء قدير
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+      <p>
+
+اللهم إني ظلمت نفسي ظلماً كثيراً، و لا يغفر الذنوب إلا أنت، فاغفر لي مغفرة من عندك، و ارحمني، إنك أنت الغفور الرحيم
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+            <p>
+اللهم طهرني من الذنوب و الخطايا، اللهم نقني منها كما ينقى الثوب الأبيض من الدنس، اللهم طهرني بالثلج و البرد و الماء البارد
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+<p>
+اللهم اغفر لي ذنبي ووسع لي في داري، و بارك لي فيما رزقتني
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+        <p>
+اللهم اغفر لي ذنوبي و خطاياي كلها، اللهم أنعشني، و أجبرني و أهدني لصالح الأعمال و الأخلاق، فإنه لا يهدي صالحها، و لا يصرف سيئها، إلا أنت
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر لي، و ارحمني، و أجبرني، و ارفعني، و أهدني و عافني، و ارزقني
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر لي ذنبي، و أخسئ شيطاني، و فك رهاني، و ثقل ميزاني، و اجعلني في الندي الأعلى
+
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+               <p>
+اللهم اغفر لي ذنبي كله، دقه و جله، و أوله و آخره، و علانيته و سره
+ </p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر لي ما أخطأت وما تعمدت، وما أسررت و ما أعلنت، وما جهلت وما علمت
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+             <p>
+اللهم اغفر لي ذنبي، و خطئي، و عمدي
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر لي ما قدمت و ما أخرت، و ما أسررت و ما أعلنت، و ما أسرفت، و ما أنت أعلم به مني، أنت المقدم و أنت المؤخر، لا إله إلا أنت 
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم أنت ربي و أنا عبدك، ظلمت نفسي و اعترفت بذنبي، يا رب فاغفر لي ذنبي، إنك أنت ربي، إنه لا يغفر الذنب إلا أنت
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر للمؤمنين و المؤمنات
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم اغفر ذنبي، و طهر قلبي، و حصن فرجي
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+         <p>
+رب اغفر لي خطيئتي يوم الدين
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+رب اغفر لي و تب علي، إنك أنت التواب الرحيم
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+أستغفر الله العظيم الذي لا إله إلا هو الحي القيوم، و أتوب إليه
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+سبحان الله و بحمده، سبحانك اللهم و بحمدك، أشهد أن لا إله إلا أنت، أستغفرك و أتوب إليك
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+سبحان الله، و الحمد الله، و لا إله إلا الله، و الله أكبر
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+سبحان الله، و الحمد الله، و لا إله إلا الله، و الله أكبر، اللهم اغفر لي، اللهم ارحمني، اللهم ارزقني 
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+سبحان الله و بحمده
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+لا إله إلا الله الحليم الكريم، لا إله إلا الله العلي العظيم، سبحان الله رب السماوات السبع و رب العرش العظيم، الحمد الله رب العالمين
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+              <p>
+اللهم صل و سلم و بارك على نبينا محمد
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+              <button onclick="btn()">100</button>
+            </div>
+          </section>
+
+          <section class="zikr">
+            <!-- النص نفسه -->
+            <div class="nas">
+    <p style="font-size: 18px;color:red">
+أي مذخورٍ قد حوته كلمات الاستغفار تلك
+إنه
+اسْتِغْفَارٌ به سيغفر اللَّه لك ذنوبك مهما بلغت.
+ اسْتِغْفَارٌ قد استحق وصفَ: (أوفق الدعاء).
+ اسْتِغْفَارٌ يغفر اللَّه به الذنب، ولو كان الفرار من الزحف.
+ اسْتِغْفَارٌ قال فيه النبي صلى الله عليه وسلم لعلي رضي الله عنه: «إذا قلته غفر لك، مع أنه مغفور لك
+اسْتِغْفَارٌ يجعل ذنوبك تتساقط من صحيفتك كما يتساقط الورق من الشجر.
+ اسْتِغْفَارٌ سيخاطبك اللَّه - جل شأنه - قائلا لك: قد فعلت
+اسْتِغْفَارٌ يغفر اللَّه به الذنوب وإن كانت مثل زَبَدِ البحر.
+اسْتِغْفَارٌ به سَتُسَرُّ بصحيفتك يوم القيامة - بإذن اللَّه
+اسْتِغْفَارٌ سيكون كالطابع للمجلس
+استغفارٌ حَصَلَ ببركة الإكثار من الصلاة على الحبيب صلى الله عليه وسلم القائل لمن أكثر الصلاة عليه «إذاً تكفى همك، ويغفر لك ذنبك» رواه الترمذي (٢٤٥٧)، وحسنه الألباني.
+
+* فطوبى لمن وجد في صحيفته استغفاراً كثيراً...
+
+
+ 
+
+
+
+ 
+
+ 
+
+</p>
+            </div>
+            <!-- العداد -->
+            <div class="counter">
+        
+            </div>
+          </section>
+
+                    
+        </div>
+      
+
+    <script src="script.js"></script>
+      <script src="all.min.js"></script
+  </body>
+</html>

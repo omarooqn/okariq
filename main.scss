@@ -1,0 +1,239 @@
+// My FrameWork
+@use './Scss/helpers/frameWork' as *;
+// Variables In All Pages 
+@use './Scss/helpers/variables' as *;
+// Navbar In All Pages
+@use  './Scss/in-all-pages/nav' as *;
+// Setting In All Pages
+@use  './Scss/in-all-pages/setting' as *;
+// Shapes triangle In All Pages 
+@use './Scss/in-all-pages/shapes-triangle' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: var(--lightModeBackground);   
+} 
+
+// Start Landing 
+.landing {
+  height: calc(100vh - 56px);
+  @media (min-width: 991px) {
+    padding-top: 140px;
+  }
+  .land-grid {
+    .text-lading {
+      font-family: var(--fontCairo);
+      h2:first-of-type {
+        color: var(--darkColor);
+        line-height: 2;
+        font-size: 75px;
+        font-weight: 600;
+        @media (max-width: 575px) {
+          font-size: 45px;
+        }
+      }
+
+      h2:last-of-type {
+        color: var(--colorTheme);
+        font-size: 80px;
+        @media (max-width: 575px) {
+          font-size: 45px;
+        }
+      }
+    }
+
+    .photo {
+      .triangle {
+        min-height: 500px;
+        @media (max-width: 575px) {
+          min-height: 400px;
+        }
+        border-top-left-radius: 180px;
+        border-bottom-right-radius: 180px;
+        border-top-right-radius: 70px;
+        border-bottom-left-radius: 70px;
+        transition: var(--mainTransition);
+        animation: move-up-down 5s infinite ease-in-out alternate;
+        @keyframes move-up-down {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(15px);
+          }
+        }
+      }
+    }
+  }
+}
+// End Landing 
+
+// Start Important Section
+section.important {
+  background-image: var(--navBackgroundInLightMode);
+  .sections-gird {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    > div {
+      background-color: var(--whiteColor);
+      box-shadow: 5px 5px 5px 0px #121212de;
+    }
+    .praying-box {
+      font-family: var(--fontCairo);
+      border-radius: 30px;
+      padding: 20px;
+      gap: 30px;
+      .photo {
+        margin-bottom: 20px;
+        width: 130px;
+      }
+      .text {
+        order: -1;
+        .time-of-praying {
+          .name {
+            color: var(--colorTheme);
+          }
+          .time {
+            color: var(--darkColor);
+          }
+          .period {
+            color: var(--darkColor);
+          }
+        }
+        .time-late {
+          color: var(--darkColor);
+          .time {
+            color: var(--colorTheme);
+          }
+        }
+        .date {
+          color: var(--darkColor);
+          .day, 
+          .year {
+            color: var(--colorTheme);
+          }
+        }
+      }
+    }
+
+    .ayat-box {
+      font-family: var(--fontCairo);
+      border-radius: 30px;
+      padding: 20px;
+      .header {
+        width: 100%;
+        .title {
+          color: var(--darkColor);
+        }
+        .icon {
+          border: 2px solid var(--colorTheme);
+          margin-bottom: 16px;
+          color: var(--darkColor);
+          padding: 1px 5px;
+          border-radius: 7px;
+        }
+      }
+      .aya {
+        color: var(--darkColor);
+        span {
+          color: var(--colorTheme);
+        }
+      }
+      .comment {
+        color: var(--darkColor);
+      }
+    }
+
+    .quran-voice {
+      padding: 20px;
+      border-radius: 30px;
+      gap: 20px;
+      .header {
+        gap: 30px;
+        .photo {
+          width: 70px;
+          img {
+            border-radius: 50%;
+          }
+        }
+        .names {
+          .name {
+            margin: 0;
+            color: var(--darkColor);
+          }
+          .sora {
+            color: var(--darkColor);
+          }
+        }
+        .again {
+          color: var(--darkColor);
+          border: 2px solid var(--colorTheme);
+          padding: 1px 5px;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}
+// End Important Section
+
+// Start Sections
+.sections {
+  .container {
+    > p {
+      font-family: var(--fontCairo);
+      font-size: 45px;
+      color: var(--colorTheme);
+      line-height: 3;
+    }
+  }
+  .your-lord {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    > a {
+      text-decoration: none;
+      background-color: var(--darkColor);
+      border-radius: 30px;
+      padding: 20px;
+      transition: var(--mainTransition);
+      box-shadow: 5px 5px 5px 0px rgb(18 18 18 / 87%);
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      .photo {
+        text-align: center;
+        z-index: 10;
+        .text {
+          p {
+            font-size: 22px;
+            font-family: var(--fontCairo);
+            color: var(--whiteColor); 
+            margin: 0;
+            transform: translateY(10px);
+          }
+        }
+      }
+
+      .wave {
+        bottom: -20px;
+        svg {
+          width: 600px;
+          opacity: .5;
+          path {
+            fill: var(--colorTheme);
+          }
+        }
+      }
+    }
+  }
+}
+// End Sections 
